@@ -61,6 +61,10 @@ public class TotalEmployees {
 	    
 	    
 	    
+        dashboard.logout(driver).click();
+	    System.out.println("Logged out Successfully");
+	    File scrFile4 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);             
+		FileUtils.copyFile(scrFile4, new File("/home/aj/Documents/screenshots/Loginpage.png"));
 	    
 	    
 	    

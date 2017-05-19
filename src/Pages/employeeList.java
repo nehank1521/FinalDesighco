@@ -62,23 +62,50 @@ public class employeeList {
 	{
 		return driver.findElement(By.xpath("//*[text()= 'View More']"));
 	}
-	
-	public static WebElement status(WebDriver driver)
+
+	public static WebElement searchByUsername(WebDriver driver)
 	{
-		return driver.findElement(By.xpath("//*[text()= 'Status']"));
+		return driver.findElement(By.cssSelector("[placeholder= 'Username']"));
 	}
 	
-	public static WebElement statusPending(WebDriver driver)
-	{	
-		return driver.findElement(By.xpath("(//span[@class='ui-radiobutton-icon fa fa-circle'])"));	
-     }
+	public static WebElement searchByEmail(WebDriver driver)
+	{
+		return driver.findElement(By.cssSelector("[placeholder= 'Email']"));
+	}
+	public static WebElement selectCheckbox3(WebDriver driver)
+	{
+	     return driver.findElement(By.xpath("(//div[@class='ui-chkbox-box ui-widget ui-corner-all ui-state-default'])[4]"));	
+	}
+	public static WebElement selectCheckbox4(WebDriver driver)
+	{
+	     return driver.findElement(By.xpath("(//div[@class='ui-chkbox-box ui-widget ui-corner-all ui-state-default'])[5]"));	
+	}
+	public static WebElement selectCheckbox5(WebDriver driver)
+	{
+	     return driver.findElement(By.xpath("(//div[@class='ui-chkbox-box ui-widget ui-corner-all ui-state-default'])[6]"));	
+	}
+	public static WebElement selectCheckbox6(WebDriver driver)
+	{
+	     return driver.findElement(By.xpath("(//div[@class='ui-chkbox-box ui-widget ui-corner-all ui-state-default'])[7]"));	
+	}
+	public static WebElement selectCheckbox7(WebDriver driver)
+	{
+	     return driver.findElement(By.xpath("(//div[@class='ui-chkbox-box ui-widget ui-corner-all ui-state-default'])[8]"));	
+	}
+	public static WebElement selectCheckbox8(WebDriver driver)
+	{
+	     return driver.findElement(By.xpath("(//div[@class='ui-chkbox-box ui-widget ui-corner-all ui-state-default'])[9]"));	
+	}
 	
-	public static WebElement ok(WebDriver driver)
+	public static WebElement selectAllCheckbox(WebDriver driver)
 	{
-		return driver.findElement(By.xpath("//*[text()= 'Ok']"));
+	     return driver.findElement(By.xpath("(//div[@class='ui-chkbox-box ui-widget ui-corner-all ui-state-default']) "));	
 	}
-	public static WebElement reply(WebDriver driver)
+	
+	public static WebElement homeIcon(WebDriver driver)
 	{
-		return driver.findElement(By.xpath("//*[text()= 'Reply']"));
+	     return driver.findElement(By.xpath("//img[@ src='assets/images/home.png'] "));	
 	}
+	
+	
 }

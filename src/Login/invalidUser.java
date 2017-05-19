@@ -44,7 +44,11 @@ public class invalidUser
         File scrFile3 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);             
 		FileUtils.copyFile(scrFile3, new File("/home/aj/Documents/screenshots/Homepage1.png"));
      
-	    
+		   
+        dashboard.logout(driver).click();
+	    System.out.println("Logged out Successfully");
+	    File scrFile4 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);             
+		FileUtils.copyFile(scrFile4, new File("/home/aj/Documents/screenshots/Loginpage.png"));
 	    driver.quit();
 	}
 }

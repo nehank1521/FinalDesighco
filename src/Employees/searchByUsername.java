@@ -34,7 +34,29 @@ public class searchByUsername {
         dashboard.employee(driver).click();	
         Thread.sleep(8000);
      
-		
+      //Search by Username
+        
+		employeeList.searchByUsername(driver).sendKeys("sumi");
+		Thread.sleep(9000);
+		File scrFile5 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);             
+	    FileUtils.copyFile(scrFile5, new File("/home/aj/Documents/screenshots/validUsername.png"));
+	    
+	    driver.navigate().refresh();
+	    Thread.sleep(6000);
+	    employeeList.searchByUsername(driver).sendKeys("$%&*^**");
+	    Thread.sleep(3000);
+		File scrFile6 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);             
+	    FileUtils.copyFile(scrFile6, new File("/home/aj/Documents/screenshots/invalidUsername.png"));
+	    
+	    
+        dashboard.logout(driver).click();
+	    System.out.println("Logged out Successfully");
+	    File scrFile4 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);             
+		FileUtils.copyFile(scrFile4, new File("/home/aj/Documents/screenshots/Loginpage.png"));
+        
+        
+        
+        
 		driver.quit();
 }
 

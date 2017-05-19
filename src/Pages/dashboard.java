@@ -16,7 +16,7 @@ public class dashboard
     
 	public static WebElement employee(WebDriver driver)
 	{
-		return driver.findElement(By.xpath("//*[text()= 'Employee']"));
+		return driver.findElement(By.xpath("//*[text()='Employee']"));
 	
 		
 	}
