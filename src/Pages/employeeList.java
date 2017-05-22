@@ -107,5 +107,10 @@ public class employeeList {
 	     return driver.findElement(By.xpath("//img[@ src='assets/images/home.png'] "));	
 	}
 	
+	public static WebElement arrowButtonForNext(WebDriver driver)
+	{
+	     return driver.findElement(By.xpath("(//span[@class='fa fa-forward']) "));	
+	}
+	
 	
 }

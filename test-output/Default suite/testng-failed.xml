@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Employees.replyForPendingCases">
+      <class name="Dashboard.comparingCases">
         <methods>
           <include name="method"/>
         </methods>
-      </class> <!-- Employees.replyForPendingCases -->
+      </class> <!-- Dashboard.comparingCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

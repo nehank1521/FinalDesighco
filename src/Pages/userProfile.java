@@ -64,8 +64,15 @@ public class userProfile {
 		return driver.findElement(By.xpath("//p-radiobutton[@name= 'groupname' and @value= 'Reviewed']"));
 	}
 	
+	public static WebElement viewImages(WebDriver driver)
+	{
+		return driver.findElement(By.xpath("//*[contains(@class,'ui-g-12 ui-lg-12 ui-md-12')]/img"));
+	}
 	
-	
+	public static WebElement viewImagesCloseButton(WebDriver driver)
+	{
+		return driver.findElement(By.xpath("(div[@class= fa fa-times])"));
+	}
 	
 	
 }
